@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>send_mail</class>
+ <widget class="QWidget" name="send_mail">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>732</width>
+    <height>541</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>sendmail</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QPushButton#Name_app{
+	background-color:#33a3dc;
+	font-family:微软雅黑;
+	font-size:20px;
+}
+
+QPushButton#address_Button{
+	background-color: yellow;
+	font-family:微软雅黑;
+	font-size:15px;
+}
+QPushButton#subject_Button{
+	background-color: yellow;
+	font-family:微软雅黑;
+	font-size:15px;
+}
+QPushButton#body_Button{
+	background-color: yellow;
+	font-family:微软雅黑;
+	font-size:15px;
+}
+QPushButton#image_Button{
+	background-color: yellow;
+	font-family:微软雅黑;
+	font-size:15px;
+}
+QPushButton#fromname_Button{
+	background-color: yellow;
+	font-family:微软雅黑;
+	font-size:15px;
+}
+QPushButton#file_Button{
+	background-color: yellow;
+	font-family:微软雅黑;
+	font-size:15px;
+}
+QPushButton#send_Button{
+	background-color:green;
+	font-family:微软雅黑;
+	font-size:15px;
+}
+QPlainTextEdit#address_TextEdit{
+	color: red;
+	font-family:微软雅黑;
+	font-size:15px;
+}
+
+
+QPlainTextEdit#subject_TextEdit{
+	color: red;
+	font-family:微软雅黑;
+	font-size:15px;
+}
+QPlainTextEdit#body_TextEdit{
+	color: red;
+	font-family:微软雅黑;
+	font-size:15px;
+}
+QPlainTextEdit#image_TextEdit{
+	color: red;
+	font-family:微软雅黑;
+	font-size:15px;
+}
+QPlainTextEdit#file_TextEdit{
+	color: red;
+	font-family:微软雅黑;
+	font-size:15px;
+}
+QPlainTextEdit#fromname_TextEdit{
+	color: red;
+	font-family:微软雅黑;
+	font-size:15px;
+}
+QPushButton#app_Button{
+	background-image:url(img.png)
+
+}</string>
+  </property>
+  <widget class="QPushButton" name="address_Button">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>110</y>
+     <width>111</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>收件人地址</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="subject_Button">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>150</y>
+     <width>111</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>邮件主题</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="send_Button">
+   <property name="geometry">
+    <rect>
+     <x>610</x>
+     <y>490</y>
+     <width>111</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>发送邮件</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="image_Button">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>350</y>
+     <width>111</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>发送图片</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="file_Button">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>410</y>
+     <width>111</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>发送文件</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="Name_app">
+   <property name="geometry">
+    <rect>
+     <x>240</x>
+     <y>0</y>
+     <width>221</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>邮件客户端（发）</string>
+   </property>
+  </widget>
+  <widget class="QPlainTextEdit" name="address_TextEdit">
+   <property name="geometry">
+    <rect>
+     <x>120</x>
+     <y>110</y>
+     <width>601</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="placeholderText">
+    <string>请输入收件人列表，多个收件人请使用“，”隔开</string>
+   </property>
+  </widget>
+  <widget class="QPlainTextEdit" name="subject_TextEdit">
+   <property name="geometry">
+    <rect>
+     <x>120</x>
+     <y>150</y>
+     <width>601</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="placeholderText">
+    <string>请输入邮件主题内容（必须写）</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="body_Button">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>190</y>
+     <width>111</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>邮件正文内容</string>
+   </property>
+  </widget>
+  <widget class="QPlainTextEdit" name="body_TextEdit">
+   <property name="geometry">
+    <rect>
+     <x>120</x>
+     <y>190</y>
+     <width>601</width>
+     <height>141</height>
+    </rect>
+   </property>
+   <property name="placeholderText">
+    <string>请输入邮件的正文内容</string>
+   </property>
+  </widget>
+  <widget class="QPlainTextEdit" name="image_TextEdit">
+   <property name="geometry">
+    <rect>
+     <x>120</x>
+     <y>350</y>
+     <width>601</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="placeholderText">
+    <string>请将需要发送的图片托到此处(或者填写完整的图片路径)</string>
+   </property>
+  </widget>
+  <widget class="QPlainTextEdit" name="file_TextEdit">
+   <property name="geometry">
+    <rect>
+     <x>120</x>
+     <y>410</y>
+     <width>601</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="placeholderText">
+    <string>请将需要发送的文件托到此处(或者填写完整的文件路径)</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="app_Button">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>111</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="fromname_Button">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>490</y>
+     <width>111</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>发件人名字</string>
+   </property>
+  </widget>
+  <widget class="QPlainTextEdit" name="fromname_TextEdit">
+   <property name="geometry">
+    <rect>
+     <x>120</x>
+     <y>490</y>
+     <width>391</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="placeholderText">
+    <string>显示在对方收件信息中的发件人名字（非真实邮箱地址）</string>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
